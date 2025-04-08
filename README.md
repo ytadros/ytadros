@@ -1,66 +1,48 @@
-## 💻 Python Developer | ETL & Backend Systems | AWS • Kubernetes • Unit Testing
+## 👋 Hi, I'm Youssef Tadros
+
+I'm a **Python developer** with a strong focus on backend systems and automation. I love writing clean, testable code that solves complex problems, especially in data engineering and infrastructure-heavy environments. My professional background includes building scalable data pipelines on AWS and automating tricky data ingestion workflows. I'm currently looking for developer roles where I can keep growing and shipping useful systems.
+
 ```python
-class Youssef:
-    role = "Python Developer"
-    location = "DC Metro Area"
-    strengths = ["backend systems", "data validation", "clean code"]
-    looking_for = "Python or backend developer roles"
+def solve(problem):
+    constraints = extract_constraints(problem)
+    logic = apply_deduction(constraints)
+    if logic:
+        return solution
+    else: 
+        return guess(constraints)
+
+# this is my idea of fun
 ```
-<br/>
 
+### 🔧 Recent Professional Work
 
-<br/>
+From June 2022 to March 2025, I was a Python Developer on a federal contract with NOAA through Cloud Alliance Inc.
 
-### ✅ Recent Highlights
+I built and maintained AWS-based ETL pipelines that processed data from a wide variety of providers. These included:
 
-- **Built scalable ETL pipelines** on AWS for a federal NOAA contract
+- **Scanner pipelines**, which handled format validation, hash and integrity checks, and virus scanning before data moved to our “clean” S3 bucket. These pipelines were designed to be provider-agnostic, scalable via deployment in an EKS cluster, and monitored using CloudWatch alarms on associated SQS queues.
 
-  - Deployed in **EKS (Kubernetes)** and architected for flexibility across data provider constraints
+- **Pulling pipelines**, which retrieved data from external sources that couldn't push to our "dirty" bucket. These pipelines were more complex and provider-specific. I developed several of them myself, fetching data from `https`, `ftps`, and `sftp` sources. These were my favorite tasks—where I got to be creative and dive deep into problem solving.
 
-  - Leveraged **S3 Event Notifications**, **SNS topics**, and **SQS queues** for event-driven processing
+My final project involved a **Tectia SFTP server** that required command-line access via a proprietary tool. I developed Python classes using `pexpect` to establish and manage subprocess connections, authenticate, retrieve directory listings, download files, and gracefully close connections—all while keeping the session alive and stable throughout.
 
-  - Included automated **format checks**, **hash and integrity validation**, and **virus scanning**
+I leaned heavily on:
 
-  - Pipelines monitored via **CloudWatch alarms**
+- **Unit testing**, including mocking tricky behaviors and simulating infrastructure.
+- **Python’s logging module**, to output clean, structured logs that made debugging and monitoring straightforward.
 
-- **Developing an Auto-Minesweeper Solver**
+### 🧠 Personal Projects
 
-  - Uses logic-based algorithms and visual debugging tools to solve the game step-by-step
+**🔍 Auto-Minesweeper (Python) (In Development)**  
+A Minesweeper player that includes options to visualize the logic engine's moves and tweak it on the fly. Features include:
+- Board customization options
+- Logic engine customization and visual debugging options
+- Currently expanding with unit tests, performance optimizations, and–crucially–a more modular code structure
 
-  - Designed with modular logic components and custom rule engines
+### 🛠️ Technical Skills
 
-  - Currently expanding with unit tests and performance optimizations
-
-<br/>
-
-
-### 🧰 Tech Stack
-
-- **Languages:** Python, SQL, PL/SQL
-
-- **Cloud:** AWS (EKS/Kubernetes, S3, Lambda, EC2, CloudWatch, SQS, SNS)
-
-- **Tools & Frameworks:** Docker, Git, Linux, GitHub Actions, unittest, REST APIs
-<br/>
-
-
-### 🎯 Open To
-
-- **Python Developer** and **Backend Developer** roles.
-
-  - Focused on building clean, maintainable systems and improving backend infrastructure.
-
-  - Quick learner with a strong foundation in automation, testing, and cloud-based development.
-<br/>
-
-
-### 📬 Contact
-
-- [LinkedIn](https://www.linkedin.com/in/youssef-tadros/)
-
-- [youssef.s.tadros@gmail.com](youssef.s.tadros@gmail.com)
-
-<!---
-ytadros/ytadros is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+**Languages**: Python, SQL, Bash  
+**Cloud & Infrastructure**: AWS (S3, EKS, SQS, CloudWatch), Docker, Kubernetes, Linux
+**Tools & Libraries**: unittest, logging, boto3, paramiko, ftplib, requests, pandas, pexpect, subprocess, multiprocessing
+**Protocols**: HTTP/S, FTPS, SFTP, Tectia SFTP (CLI)  
+**Other**: Git, VS Code, Agile, Data Pipelines, CI/CD basics
