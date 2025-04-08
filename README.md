@@ -18,7 +18,7 @@ def solve(problem):
 
 From June 2022 to March 2025, I was a Python Developer on a federal contract with NOAA through Cloud Alliance Inc.
 
-I built and maintained AWS-based ETL pipelines that processed data from a wide variety of providers. These included:
+I built and maintained AWS-based data pipelines that processed data from a wide variety of providers. These included:
 
 - **Scanner pipelines**, which handled format validation, hash and integrity checks, and virus scanning before data moved to our “clean” S3 bucket. These pipelines were designed to be provider-agnostic, scalable via deployment in an EKS cluster, and monitored using CloudWatch alarms on associated SQS queues.
 
