@@ -22,9 +22,9 @@ I built and maintained AWS-based ETL pipelines that processed data from a wide v
 
 - **Scanner pipelines**, which handled format validation, hash and integrity checks, and virus scanning before data moved to our “clean” S3 bucket. These pipelines were designed to be provider-agnostic, scalable via deployment in an EKS cluster, and monitored using CloudWatch alarms on associated SQS queues.
 
-- **Pulling pipelines**, which retrieved data from external sources that couldn't push to our "dirty" bucket. These pipelines were more complex and provider-specific. I developed several of them myself, fetching data from `https`, `ftps`, and `sftp` sources. These were my favorite tasks—where I got to be creative and dive deep into problem solving.
+- **Pulling pipelines**, which retrieved data from external sources that couldn't push to our "dirty" bucket. These pipelines were more complex and provider-specific. I developed several of them myself, fetching data from **https**, **ftps**, and **sftp** sources. These were my favorite tasks—where I got to be creative and dive deep into problem solving.
 
-My final project involved a **Tectia SFTP server** that required command-line access via a proprietary tool. I developed Python classes using `pexpect` to establish and manage subprocess connections, authenticate, retrieve directory listings, download files, and gracefully close connections—all while keeping the session alive and stable throughout.
+My final project involved a **Tectia SFTP server** that required command-line access via a proprietary tool. I developed Python classes using **pexpect** to establish and manage subprocess connections, authenticate, retrieve directory listings, download files, and gracefully close connections—all while keeping the session alive and stable throughout.
 
 I leaned heavily on:
 
