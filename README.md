@@ -5,11 +5,12 @@ I'm a **Python developer** with a strong focus on backend systems and automation
 ```python
 def solve(problem):
     constraints = extract_constraints(problem)
-    logic = apply_deduction(constraints)
-    if logic:
+    try:
+        logic = apply_deduction(constraints)
         return solution
-    else: 
-        return guess(constraints)
+    except CustomError:
+        tie_loose_ends()
+        raise CustomError
 
 # this is my idea of fun
 ```
